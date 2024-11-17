@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
+import 'package:bmi_calculator/utils/colors.dart';
 import 'package:bmi_calculator/widgets/buttom_screen2.dart';
 import 'package:flutter/material.dart';
 
@@ -132,7 +133,7 @@ class Result_screen extends StatelessWidget {
                         
                        num_re.toStringAsFixed(2),
                         style: TextStyle(
-                          color: Colors.white,
+                          color: AppColor.whiteColor,
                           fontSize: 25,
                         ),
                       ),
@@ -144,7 +145,7 @@ class Result_screen extends StatelessWidget {
                         
                       "this is the result",
                         style: TextStyle(
-                          color: Colors.white,
+                          color: AppColor.whiteColor,
                           fontSize: 25,
                         ),
                       ),

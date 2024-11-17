@@ -1,6 +1,7 @@
 // ignore_for_file: use_key_in_widget_constructors, prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 
+import 'package:bmi_calculator/utils/colors.dart';
 import 'package:bmi_calculator/widgets/buttom_screen1.dart';
 import 'package:flutter/material.dart';
 
@@ -23,7 +24,7 @@ class _HomeScreenState extends State<HomeScreen> {
       //appbar title
       appBar: AppBar(
         backgroundColor: Color(0xff1d1e33),
-
+          leading:Text("") ,
         //titel
         title: Center(
           child: Text(
@@ -56,7 +57,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       child: Container(
                         decoration: BoxDecoration(
                           color:
-                              (ismale) ? Color(0xffeb1555) : Color(0xff1d1e33),
+                              (ismale) ? AppColor.redColor : AppColor.primaryColor,
                           borderRadius: BorderRadius.circular(10),
                         ),
                         child: Center(
@@ -98,7 +99,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       child: Container(
                         decoration: BoxDecoration(
                           color:
-                              (ismale) ? Color(0xff1d1e33) : Color(0xffeb1555),
+                              (ismale) ? AppColor.primaryColor: AppColor.redColor,
                           borderRadius: BorderRadius.circular(10),
                         ),
                         child: Center(
@@ -134,7 +135,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 width: double.infinity,
                 margin: EdgeInsets.symmetric(vertical: 10),
                 decoration: BoxDecoration(
-                  color: Color(0xff1d1e33), //0xff1d1e33
+                  color: AppColor.primaryColor, //0xff1d1e33
                   borderRadius: BorderRadius.circular(10),
                 ),
                 child: Center(
@@ -171,7 +172,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         value: heigh.toDouble(),
                         max: 220,
                         min: 120,
-                        activeColor: Color(0xffeb1555),
+                        activeColor: AppColor.redColor,
                         inactiveColor: Color(0xff525365),
                         onChanged: (value) {
                           setState(() {
@@ -193,7 +194,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   Expanded(
                     child: Container(
                       decoration: BoxDecoration(
-                        color: Color(0xff1d1e33),
+                        color: AppColor.primaryColor,
                         borderRadius: BorderRadius.circular(10),
                       ),
                       child: Center(
